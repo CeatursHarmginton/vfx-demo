@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hành Trình 5 Bước Mở Rương Đại Bùng Nổ — Sakuga VFX 🇻🇳</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:ital,wght@0,700;0,800;0,900;1,900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/multiverse-theme.css" />
+</head>
+<body>
+  <!-- Sticky Top HUD with 5-Step Connected Relay Map -->
+  <header class="hud-bar">
+    <div class="brand">
+      <span class="badge-tag">SAKUGA QUEST 🇻🇳</span>
+      <span>Dây Chuyền Phá Ấn Rương Báu</span>
+    </div>
+
+    <nav class="step-map" aria-label="Tiến trình 5 bước">
+      <a id="nav-s1" class="step-node" href="#step-1">1. Khởi Nguồn</a>
+      <span class="step-arrow">➔</span>
+      <a id="nav-s2" class="step-node" href="#step-2">2. Phá Giáp</a>
+      <span class="step-arrow">➔</span>
+      <a id="nav-s3" class="step-node" href="#step-3">3. Niệm Chú</a>
+      <span class="step-arrow">➔</span>
+      <a id="nav-s4" class="step-node" href="#step-4">4. Tụ Bão</a>
+      <span class="step-arrow">➔</span>
+      <a id="nav-s5" class="step-node final-node" href="#step-5">🎁 5. NỔ RƯƠNG!</a>
+    </nav>
+
+    <div class="hud-actions">
+      <span id="hud-combo" class="pill-stat">COMBO x0</span>
+      <button id="btn-sfx-lang" class="mini-toggle-btn" type="button">🇻🇳 SFX: Tiếng Việt</button>
+      <button id="btn-sound-mute" class="mini-toggle-btn" type="button">🔊 Âm thanh: BẬT</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- =====================================================================
+         BƯỚC 01: KHỞI NGUỒN MẠCH NƯỚC & TRIỆU HỒI ĐỒNG ĐỘI
+         ===================================================================== -->
+    <section id="step-1" class="section-card">
+      <div class="step-header-row">
+        <span class="sec-kicker">Bước 01 / 05 · Khởi Nguồn Năng Lượng</span>
+        <span id="seal-badge-1" class="seal-status">🔒 Phong Ấn #1: Chưa mở</span>
+      </div>
+      <h1 class="sec-title">Gạt Mạch Nước 43 Khung Hình &amp; Mở Pokéball Gọi Pikachu</h1>
+      <p class="sec-desc">
+        Mọi hành trình bắt đầu từ nguồn điện đầu tiên: Hãy <strong>gạt Công tắc chất lỏng</strong> (đổi Sáng/Tối làm Bé Bồ Hóng giật mình) hoặc <strong>bấm vào Quả cầu Pokéball</strong> để triệu hồi Pikachu xuống trạm chiến đấu ở Bước 2!
+      </p>
+
+      <div class="hero-grid">
+        <div class="sub-box">
+          <div id="bubble-soot" class="bubble">Mắt tớ liếc theo chuột bạn đó! Gạt công tắc nước bên dưới để mở Ấn #1 nha!</div>
+          <div class="liquid-switch-stage">
+            <div style="text-align:center;">
+              <sakuga-toggle id="liquid-theme-toggle" label="Công tắc mạch nước Sáng / Tối"></sakuga-toggle>
+              <div style="font-weight:900;font-size:12.5px;color:var(--ink-sub);margin-top:-6px;">Công tắc chất lỏng 43 frames</div>
+            </div>
+            <sakuga-soot id="mascot-soot" size="108" label="Bồ Hóng Ghibli"></sakuga-soot>
+          </div>
+        </div>
+
+        <div class="sub-box" style="align-items:center;text-align:center;">
+          <div style="font-weight:900;font-size:15.5px;">🔴 Hộp Triệu Hồi Đồng Đội Chính</div>
+          <sakuga-pokeball id="mascot-pokeball" size="116" label="Pokéball (Click lắc mở!)"></sakuga-pokeball>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;">
+            <sakuga-button id="btn-step1-activate">⚡ Kích Hoạt Bước 1 Ngay!</sakuga-button>
+            <sakuga-tooltip text="Hoàn thành đủ 4 Bước sẽ nạp 100% công lực cho Rương Kho Báu ở cuối trang!">?</sakuga-tooltip>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đường ống dẫn năng lượng 1 -> 2 -->
+    <div id="conduit-1" class="energy-conduit">
+      <div class="pipe-line"></div>
+      <div id="conduit-label-1" class="conduit-badge">▼ Truyền điện xuống Pikachu ở Bước 02 ▼</div>
+      <div class="pipe-line"></div>
+    </div>
+
+    <!-- =====================================================================
+         BƯỚC 02: TÍCH ÁP 100.000V & ĐÁNH VĂNG VƯƠNG MIỆN VUA SLIME
+         ===================================================================== -->
+    <section id="step-2" class="section-card">
+      <div class="step-header-row">
+        <span class="sec-kicker">Bước 02 / 05 · Phá Giáp Thu Ngọc</span>
+        <span id="seal-badge-2" class="seal-status">🔒 Phong Ấn #2: Chưa mở</span>
+      </div>
+      <h2 class="sec-title">Nạp Sét Cho Pikachu &amp; Thu Phục Vua Slime Thủy Tinh</h2>
+      <p class="sec-desc">
+        Pikachu đã vào vị trí! Hãy kéo thanh trượt <code>&lt;sakuga-slider&gt;</code> lên trên <strong>80%</strong> rồi thả tay (hoặc chọn 1 trong 4 hệ hiệu ứng bên phải rồi tung đòn) để đánh bật vương miện của <strong>Vua Slime</strong>, lấy nguồn ngọc truyền xuống Bước 3!
+      </p>
+
+      <div class="arena-grid">
+        <div class="sub-box">
+          <div id="bubble-pika" class="bubble">Pika~ Pika! Kéo thanh điện áp ≥ 80% hoặc bấm vào tớ để phóng sét 100.000V!</div>
+          <div class="pika-duo">
+            <sakuga-pikachu id="mascot-pikachu" size="148" label="Pikachu (Click phóng sét!)"></sakuga-pikachu>
+          </div>
+          <div style="--sk-slider-width: 100%;">
+            <sakuga-slider id="volt-slider" value="45" min="0" max="100" unit="%" label="Điện áp má Pikachu"></sakuga-slider>
+          </div>
+        </div>
+
+        <div class="sub-box">
+          <div id="bubble-slime" class="bubble">Đánh trúng trẫm là rơi Ấn Chương #2 cho Rương Báu đó! 👑</div>
+          <div style="display:flex;align-items:center;justify-content:space-around;flex-wrap:wrap;gap:14px;">
+            <sakuga-king-slime id="mascot-slime" size="142" label="Vua Slime (Click ăn đòn!)"></sakuga-king-slime>
+            <div>
+              <div style="font-weight:900;font-size:13.5px;margin-bottom:8px;">Chọn Hệ Đòn Đánh:</div>
+              <sakuga-radio id="element-radio" value="thunder" label="Hệ Hiệu Ứng">
+                <option value="thunder" selected>⚡ Sét 100.000V (Pikachu)</option>
+                <option value="slash">⚔️ Song Kiếm Chém Chữ X</option>
+                <option value="splash">🌊 Sóng Nước Bắn Tung Tóe</option>
+                <option value="crystal">💎 Nổ Văng Mảnh Pha Lê</option>
+              </sakuga-radio>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:center;">
+            <sakuga-button id="btn-attack-slime">Tung Đòn Phá Giáp!</sakuga-button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đường ống dẫn năng lượng 2 -> 3 -->
+    <div id="conduit-2" class="energy-conduit">
+      <div class="pipe-line"></div>
+      <div id="conduit-label-2" class="conduit-badge">▼ Dẫn tinh thể ngọc xuống Kirby ở Bước 03 ▼</div>
+      <div class="pipe-line"></div>
+    </div>
+
+    <!-- =====================================================================
+         BƯỚC 03: NIỆM MẬT KHẨU TIẾNG VIỆT CÙNG KIRBY MOCHI
+         ===================================================================== -->
+    <section id="step-3" class="section-card">
+      <div class="step-header-row">
+        <span class="sec-kicker">Bước 03 / 05 · Luyện Thần Chú Mở Khóa</span>
+        <span id="seal-badge-3" class="seal-status">🔒 Phong Ấn #3: Chưa mở</span>
+      </div>
+      <h2 class="sec-title">Gõ Mật Khẩu Tiếng Việt Để Kirby Phun Nổ Ấn Chương #3</h2>
+      <p class="sec-desc">
+        Chiếc Rương Huyền Thoại cần một câu thần chú Tiếng Việt thật vang! Gõ bất kỳ từ nào vào ô <code>&lt;sakuga-input&gt;</code> rồi bấm nút để <strong>Kirby Mochi</strong> hút xoáy vào bụng và bắn nổ câu chữ đó xuống Trạm Tụ Bão!
+      </p>
+
+      <div class="kirby-grid">
+        <div class="sub-box" style="align-items:center;text-align:center;">
+          <div id="bubble-kirby" class="bubble">Poyo~! Cho tớ hút một câu Tiếng Việt thật kêu để phá Ấn #3 nhé! ⭐</div>
+          <sakuga-kirby id="mascot-kirby" size="148" label="Kirby Mochi (Click hút & phun!)"></sakuga-kirby>
+        </div>
+
+        <div class="sub-box">
+          <div>
+            <div style="font-weight:900;font-size:16px;margin-bottom:6px;">✍️ Nhập Thần Chú Phá Ấn Rương Báu:</div>
+            <div style="font-size:13.5px;color:var(--ink-sub);font-weight:700;margin-bottom:14px;">
+              Mỗi phím gõ đều tung khói bụi ngay đầu con trỏ — bấm nút là nổ chữ 3D:
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;--sk-input-width:245px;">
+              <sakuga-input id="kirby-word-input" value="VỪNG ƠI MỞ RA!!" placeholder="Nhập thần chú..." label="Thần chú Tiếng Việt"></sakuga-input>
+              <sakuga-button id="btn-kirby-fire">🌟 Hút &amp; Khắc Ấn!</sakuga-button>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-weight:800;font-size:12.5px;color:var(--ink-sub);">Hoặc bấm chọn nhanh câu thần chú:</div>
+            <div class="preset-chips">
+              <button class="preset-chip" type="button" data-word="VỪNG ƠI MỞ RA!!">🗝️ VỪNG ƠI MỞ RA!!</button>
+              <button class="preset-chip" type="button" data-word="ĐẠI BÙNG NỔ!!">💥 ĐẠI BÙNG NỔ!!</button>
+              <button class="preset-chip" type="button" data-word="ĐỈNH NÓC!!">🔥 ĐỈNH NÓC!!</button>
+              <button class="preset-chip" type="button" data-word="QUÁ ĐÃ!!">⚡ QUÁ ĐÃ!!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đường ống dẫn năng lượng 3 -> 4 -->
+    <div id="conduit-3" class="energy-conduit">
+      <div class="pipe-line"></div>
+      <div id="conduit-label-3" class="conduit-badge">▼ Tụ năng lượng vào Thanh Mây Bão ở Bước 04 ▼</div>
+      <div class="pipe-line"></div>
+    </div>
+
+    <!-- =====================================================================
+         BƯỚC 04: HỘI TỤ MÂY BÃO 100% & CHẤM ĐỦ 5 NGÔI SAO
+         ===================================================================== -->
+    <section id="step-4" class="section-card">
+      <div class="step-header-row">
+        <span class="sec-kicker">Bước 04 / 05 · Hội Tụ Bão Năng Lượng 100%</span>
+        <span id="seal-badge-4" class="seal-status">🔒 Phong Ấn #4: Chưa mở</span>
+      </div>
+      <h2 class="sec-title">Chấm Đủ 5 Ngôi Sao &amp; Nạp Đầy Thanh Mây Bão “ẦM ẦM...”</h2>
+      <p class="sec-desc">
+        Ba bước trên đã tự động thắp sáng 3 dấu kiểm bên dưới. Hãy <strong>bấm vào ngôi sao thứ 5</strong> trên thanh <code>&lt;sakuga-rating&gt;</code> để kích nổ Ấn Chương cuối cùng, đẩy đám mây bão trên <code>&lt;sakuga-progress&gt;</code> cán mốc <strong>100%</strong>!
+      </p>
+
+      <div class="quest-grid">
+        <div>
+          <sakuga-tabs id="showcase-tabs" label="Bảng kiểm tra phong ấn">
+            <option value="seals">4 Chốt Khóa Phong Ấn</option>
+            <option value="tips">Mẹo Nổ Rương Cực Đại</option>
+          </sakuga-tabs>
+
+          <div id="panel-seals" class="check-stack">
+            <div class="check-row">
+              <sakuga-checkbox id="q-step1">⚡ Ấn #1: Đã khởi động mạch nước / mở Pokéball (Bước 1)</sakuga-checkbox>
+            </div>
+            <div class="check-row">
+              <sakuga-checkbox id="q-step2">💧 Ấn #2: Đã phóng chiêu phá giáp Vua Slime (Bước 2)</sakuga-checkbox>
+            </div>
+            <div class="check-row">
+              <sakuga-checkbox id="q-step3">⭐ Ấn #3: Đã dùng Kirby phun thần chú Tiếng Việt (Bước 3)</sakuga-checkbox>
+            </div>
+            <div class="check-row">
+              <sakuga-checkbox id="q-step4">🌟 Ấn #4: Chấm đủ 5 Ngôi Sao ở khung bên phải!</sakuga-checkbox>
+            </div>
+          </div>
+
+          <div id="panel-tips" class="sub-box" hidden style="margin-top:16px;">
+            <div style="font-weight:900;font-size:15.5px;">💡 Chế độ Siêu Nạp (Supercharged 4/4):</div>
+            <div style="font-size:14px;color:var(--ink-sub);font-weight:700;line-height:1.55;">
+              Bạn có thể bấm nổ Rương Báu ở Bước 5 <strong>bất cứ lúc nào</strong>, nhưng khi đủ <strong>4/4 Phong Ấn (100% Mây Bão)</strong>, chiếc rương sẽ rung bần bật phát hào quang vàng và phun lượng kho báu nhiều gấp rưỡi khắp màn hình!
+            </div>
+          </div>
+        </div>
+
+        <div class="sub-box" style="align-items:center;text-align:center;">
+          <div>
+            <div style="font-weight:900;font-size:16px;margin-bottom:4px;">🌟 Bấm Ngôi Sao Thứ 5 Để Mở Ấn Cuối:</div>
+            <div style="display:flex;justify-content:center;padding:6px 0;">
+              <sakuga-rating id="sakuga-five-star" value="4" label="Chấm 5 sao mở khóa"></sakuga-rating>
+            </div>
+          </div>
+
+          <div style="width:100%;--sk-progress-width:100%;">
+            <div style="font-weight:900;font-size:14.5px;margin-bottom:4px;">🌩️ Áp Suất Lõi Rương Báu:</div>
+            <sakuga-progress id="storm-progress" value="0" label="Áp suất mở rương"></sakuga-progress>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Đường ống dẫn năng lượng 4 -> 5 (Tới Rương Báu!) -->
+    <div id="conduit-4" class="energy-conduit">
+      <div class="pipe-line"></div>
+      <div id="conduit-label-4" class="conduit-badge">▼ DẪN TOÀN BỘ NĂNG LƯỢNG VÀO RƯƠNG KHO BÁU ▼</div>
+      <div class="pipe-line"></div>
+    </div>
+
+    <!-- =====================================================================
+         BƯỚC 05 (ĐẠI KẾT CỤC): RƯƠNG KHO BÁU PHÁT NỔ TRÀN TOÀN MÀN HÌNH!
+         ===================================================================== -->
+    <section id="step-5" class="section-card chest-altar-card">
+      <div class="step-header-row" style="justify-content:center;">
+        <span class="sec-kicker" style="background:var(--accent-pink);font-size:13px;">Bước 05 / 05 · Đại Kết Cục Toàn Màn Hình</span>
+      </div>
+
+      <h2 class="sec-title" style="font-size:clamp(25px, 3.4vw, 34px);">🎁 Rương Kho Báu Sakuga Huyền Thoại</h2>
+      <p class="sec-desc" style="margin-left:auto;margin-right:auto;">
+        Toàn bộ năng lượng từ 4 bước trên đều dẫn thẳng về đây! Hãy <strong>ấn trực tiếp vào chiếc Rương Kho Báu</strong> (hoặc nút bên dưới) để kích hoạt <strong>Vụ Nổ Chấn Động Toàn Trang Web (100% Full-Screen)</strong>!
+      </p>
+
+      <div class="seal-orbs-row">
+        <span id="orb-1" class="seal-pill">🔒 Ấn #1: Khởi Nguồn</span>
+        <span id="orb-2" class="seal-pill">🔒 Ấn #2: Phá Giáp</span>
+        <span id="orb-3" class="seal-pill">🔒 Ấn #3: Thần Chú</span>
+        <span id="orb-4" class="seal-pill">🔒 Ấn #4: Năm Sao</span>
+      </div>
+
+      <div class="chest-stage-wrap">
+        <div id="bubble-chest" class="bubble" style="max-width:380px;margin-bottom:10px;">
+          Ấn vào Rương để KÍCH NỔ TOÀN MÀN HÌNH ngay! (Mở đủ 4 Ấn sẽ nổ Siêu Cấp!)
+        </div>
+
+        <sakuga-treasure-chest id="grand-treasure-chest" size="210" label="Ấn vào Rương để PHÁT NỔ!"></sakuga-treasure-chest>
+
+        <div style="margin-top:16px;display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
+          <sakuga-button id="btn-detonate-chest">💥 KÍCH NỔ KHO BÁU TOÀN MÀN HÌNH!!</sakuga-button>
+        </div>
+      </div>
+
+      <!-- ===================================================================
+           KHO BOM HỦY DIỆT BỐ ĐỜI (4 QUẢ BOM · 4 HỆ MÀU ĐỘC BẢN FULL MÀN HÌNH!)
+           =================================================================== -->
+      <hr style="border:none;border-top:3px dashed var(--sk-soft);margin:34px 0 28px;" />
+
+      <div>
+        <span class="sec-kicker" style="background:#141226;color:#39FF14;">☢️ Kho Vũ Khí Đặc Biệt · 4 Hệ Nổ Full Màn Hình</span>
+        <h3 class="sec-title" style="margin-top:6px;">Dàn Siêu Bom “Bố Đời” — 4 Sắc Thái Hủy Diệt Độc Bản</h3>
+        <p class="sec-desc" style="margin-left:auto;margin-right:auto;margin-bottom:14px;">
+          Ấn trực tiếp vào từng quả bom bên dưới để xem <strong>4 kiểu nổ lấp kín 100% màn hình</strong> hoàn toàn khác nhau — hoặc bấm nút đỏ cuối cùng để <strong>kích nổ liên hoàn cả 4 quả nối đuôi nhau</strong>!
+        </p>
+
+        <div class="bomb-arsenal-grid">
+          <!-- Bomb 1: Void Singularity -->
+          <div class="bomb-pod pod-void">
+            <span class="bomb-color-tag" style="background:#00FF9D;color:#090314;">TÍM TỬ LÔI × LỤC MA GIỚI</span>
+            <sakuga-mega-bomb id="bomb-void" type="void" size="142" label="Bom Hố Đen Vũ Trụ"></sakuga-mega-bomb>
+            <div class="bomb-desc">Xoáy hút thiên hà &amp; Nứt vỡ mặt kính chiều không gian thứ 4!</div>
+          </div>
+
+          <!-- Bomb 2: Crimson Hellfire Nuke -->
+          <div class="bomb-pod pod-crimson">
+            <span class="bomb-color-tag" style="background:#FF003C;color:#FFFFFF;">ĐỎ MÁU × DUNG NHAM</span>
+            <sakuga-mega-bomb id="bomb-crimson" type="crimson" size="142" label="Bom Hạt Nhân Hỏa Ngục"></sakuga-mega-bomb>
+            <div class="bomb-desc">3 vòng ma pháp giáng laser &amp; Cột lửa nấm khổng lồ kịch trần!</div>
+          </div>
+
+          <!-- Bomb 3: Cyber EMP 1-Billion Volt -->
+          <div class="bomb-pod pod-cyber">
+            <span class="bomb-color-tag" style="background:#00F5FF;color:#041026;">XANH LASER × VÀNG VOLT</span>
+            <sakuga-mega-bomb id="bomb-cyber" type="cyber" size="142" label="Bom Bão Từ 1 Tỷ Volt"></sakuga-mega-bomb>
+            <div class="bomb-desc">Quét lưới radar khóa mục tiêu &amp; Lồng 24 tia sét cao thế toàn màn hình!</div>
+          </div>
+
+          <!-- Bomb 4: Toxic Neon Chaos -->
+          <div class="bomb-pod pod-chaos">
+            <span class="bomb-color-tag" style="background:#39FF14;color:#140326;">XANH AXIT × HỒNG NEON</span>
+            <sakuga-mega-bomb id="bomb-chaos" type="chaos" size="142" label="Bom Hỗn Mang Neon"></sakuga-mega-bomb>
+            <div class="bomb-desc">Vệt chém X phản quang &amp; Bão xoáy khói graffiti đa sắc điên rồ!</div>
+          </div>
+        </div>
+
+        <div style="margin-top:24px;display:flex;justify-content:center;">
+          <sakuga-button id="btn-armageddon-all">🚨 NÚT ĐỎ TẬN THẾ: NỔ LIÊN HOÀN CẢ 4 SIÊU BOM!!</sakuga-button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Smear-Frame Sakuga Toast Notification -->
+  <sakuga-toast id="sakuga-toast-el"></sakuga-toast>
+
+  <script src="./js/sound-synth.js"></script>
+  <script src="./js/sakuga-core-ui.js"></script>
+  <script src="./js/cute-creatures.js"></script>
+  <script src="./js/apocalypse-bombs.js"></script>
+  <script src="./js/multiverse-director.js"></script>
+</body>
+</html>
